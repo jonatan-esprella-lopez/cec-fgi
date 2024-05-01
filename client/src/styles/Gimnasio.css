@@ -1,0 +1,43 @@
+.Container_Main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_buscador_gimnasio{
+    width: 100%;
+    padding: 3rem 0 0 0;
+}
+
+.contenedor_buscador{
+    padding: 1rem;
+}
+
+.contenedor_buscador input{
+    width: 50%;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #9a9a9a;
+    margin-right: 1.5rem;
+    background-image: url('../assets/images/correo_electronico.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    padding-left: 60px;
+    font-weight: 400;
+    text-align: start; 
+}
+
+.contendor_principal_gym{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor_1_gimnasios{
+    width: 40%;
+}
+
+.contenedor_2_gimnasios{
+    width: 60%;
+}

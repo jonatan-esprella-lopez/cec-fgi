@@ -1,0 +1,150 @@
+.ContenedorPerfilUser{
+    display: flex;
+    height: 100%;
+    background-color: rgb(29, 29, 29);
+}
+
+
+.FondoNavIzquierda{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 8rem;
+    color: white;
+}
+
+.NavIPerfil1{
+    display: flex;
+    flex-direction: column;
+}
+
+.contendorImagenPerfil{
+    height: 10rem;
+    width: 25rem;
+    background-image: "";
+    border: 1px solid #000;
+    background-image: url('../assets/images/Perfiles/Julieta.jpg');
+    background-size: cover;
+
+}
+.contendorImagenPerfil:hover{
+    
+    font-size: 40px;
+    filter:  brightness(50%) contrast(120%) hue-rotate(200deg);
+
+    border-left: 10px solid #ff8000;
+}
+
+
+.PosicionNombrePerfil{
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    margin: 0;
+    color: white;
+    align-items: end;
+    padding: 2rem;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+
+/*esta parte es del section*/
+.contenedorPerfil{
+    display: flex;
+
+}
+
+
+
+.imagenPortadaPerfil{
+    width: 100%;
+    
+}
+.contenedorDatosPortada{
+    position: absolute  ;
+    top: 5%;
+    width: 30rem;
+    padding: 2rem;
+}
+.contenedeorSectionPerfil{
+    color: white;
+    height: 100%;
+}
+
+.contenedorNombre{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    border-bottom: 1px solid rgb(0, 187, 255);
+}
+.contenedorDescripcion{
+    font-size: 15px;
+    padding: 1rem;
+    background: linear-gradient(to right, rgb(0, 0, 0), transparent); /* Filtro rojo a transparente */
+    
+
+}
+
+.contenedorDescripcion p{
+    text-align: start;
+}
+
+.contenedorLinksperfil{
+    display: flex;
+}
+
+.contenedorLinksperfil p{
+    padding: 1rem;
+}
+
+
+.contenedorLateralDerecho{
+    width: 5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/*aqui*/
+.contenedorSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.textoVertical{
+    writing-mode: vertical-rl; 
+    align-items: center;
+    font-size: 15px;
+    font-weight: 800;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 5rem;
+    border: none;
+    border-bottom: 1px solid black;
+    height: 10rem;
+    background-color: rgb(255, 132, 0);
+}
+
+.textoExtremos{
+    writing-mode: vertical-rl; 
+    align-items: center;
+    font-size: 15px;
+    font-weight: 800;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 5rem;
+    border: none;
+    border-bottom: 1px solid black;
+    height: 5rem;
+    background-color: rgb(255, 132, 0);
+}
+
+.IconosNavIzquierdo{
+    background-color: #ff8000;
+    border-bottom: 1px solid white;
+    padding: 2rem 0;
+}
