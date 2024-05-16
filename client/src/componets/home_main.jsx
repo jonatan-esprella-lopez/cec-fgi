@@ -20,7 +20,13 @@ import Novedades from "../componets/Comp_Noti_Nov"
 import Footer from "../componets/Footer_Main"
 
 function BannerHome(){
+    const[data, setData] = React.useState(null);
 
+    React.useEffect(() => {
+        fetch("/api")
+          .then((res) => res.json())
+          .then((data) => setData(data.message));
+      }, []);
     
     return( 
         <div className="App-header">
@@ -35,7 +41,7 @@ function BannerHome(){
 
                 </a>    
                 <div className="Banner_content">
-                    <h1>¿Listo Para Entrenar?</h1>
+                    <h1>¿Listo Para Entrenar? {!data ? "Loading..." : data}</h1>
                     <p>
                         Recuerda, entrenar por el cuerpo que deseas
                     </p>

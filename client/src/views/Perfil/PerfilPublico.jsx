@@ -41,10 +41,9 @@ function PerfilPublico(){
                             <p className="PosicionNombrePerfil">Carlos</p>
                         </div>
                     </div>
-                    <div>
+                    <div className="Contenedor-Imagen">
                         <div className="contenedorSection">
                             <div className="contenedeorSectionPerfil">
-                                <img src={Portada} className="imagenPortadaPerfil" />
                                 <div className="contenedorDatosPortada">
                                 <div className="contenedorNombre">
                                     <p><strong>Jonatan</strong> Esprella</p>
@@ -60,8 +59,8 @@ function PerfilPublico(){
                                     </p>
                                 </div>
                                 <div className="contenedorLinksperfil">
-                                    <p>Facebook</p>
-                                    <p>Instagram</p>
+                                    <button className="BotonRedes">Facebook</button>
+                                    <button className="BotonRedes">Instagram</button>
                                 </div>
                                 </div>
                             </div>

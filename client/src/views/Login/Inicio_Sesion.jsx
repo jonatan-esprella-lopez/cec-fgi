@@ -35,7 +35,7 @@ function Login() {
             type="email"
             id="email"
             value={email}
-            onChange={handleEmailChange}
+            onChange={handleEmailChange} 
             required
           />
         </div>
