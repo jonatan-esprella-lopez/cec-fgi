@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "../App.css"
 import Logo from "../assets/images/CEC/Logo.svg"
 
@@ -15,16 +16,17 @@ function HeaderMain(){
             </a>
         </div>
         <nav className="contenedor_Link_Paginas">
-            <a href="./" className="Link_Paginas">Home</a>
-            <a href="./Nuestras rutinas" className="Link_Paginas">Ruttinas</a>
-            <a href="./Nutricion" className="Link_Paginas">Nutricion</a>
-            <a href="./Nuestros Gimnasios" className="Link_Paginas">Gimnasios</a>
-            <a href="./Evaluaciones" className="Link_Paginas">Evaluaciones</a>
-            <a href="./Nosotros" className="Link_Paginas">Nosotros</a>
-            <a href="" className="Link_Paginas">Soporte</a>
+                    
+            <Link to="/"><p className="Link_Paginas">Home</p></Link>
+            <Link to="/Nuestras rutinas"><p className="Link_Paginas">Ruttinas</p></Link>
+            <Link to="/Nutricion"><p className="Link_Paginas">Nutricion</p></Link>
+            <Link to="/Nuestros Gimnasios"><p className="Link_Paginas">Gimnasios</p></Link>
+            <Link to="/Evaluaciones"><p className="Link_Paginas">Evaluaciones</p></Link>
+            <Link to="/Nosotros"><p className="Link_Paginas">Nosotros</p></Link>
+            <Link to="/Soporte"><p className="Link_Paginas">Soporte</p></Link>
 
-            <a href="./login" className="Link_Paginas">Login</a>
-            <a href="./registro" className="Link_Paginas">Registro</a>
+            <Link to="/login"><p className="Link_Paginas">Login</p></Link>
+            <Link to="/registro"><p className="Link_Paginas">Registro</p></Link>
         </nav>
     </header>
     )
