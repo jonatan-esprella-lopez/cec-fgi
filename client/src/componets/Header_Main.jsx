@@ -15,16 +15,16 @@ function HeaderMain(){
             </a>
         </div>
         <nav className="contenedor_Link_Paginas">
-            <a href="/" className="Link_Paginas">Home</a>
-            <a href="/Nuestras rutinas" className="Link_Paginas">Ruttinas</a>
-            <a href="/Nutricion" className="Link_Paginas">Nutricion</a>
-            <a href="/Nuestros Gimnasios" className="Link_Paginas">Gimnasios</a>
-            <a href="/Evaluaciones" className="Link_Paginas">Evaluaciones</a>
-            <a href="/Nosotros" className="Link_Paginas">Nosotros</a>
+            <a href="./" className="Link_Paginas">Home</a>
+            <a href="./Nuestras rutinas" className="Link_Paginas">Ruttinas</a>
+            <a href="./Nutricion" className="Link_Paginas">Nutricion</a>
+            <a href="./Nuestros Gimnasios" className="Link_Paginas">Gimnasios</a>
+            <a href="./Evaluaciones" className="Link_Paginas">Evaluaciones</a>
+            <a href="./Nosotros" className="Link_Paginas">Nosotros</a>
             <a href="" className="Link_Paginas">Soporte</a>
 
-            <a href="/login" className="Link_Paginas">Login</a>
-            <a href="/registro" className="Link_Paginas">Registro</a>
+            <a href="./login" className="Link_Paginas">Login</a>
+            <a href="./registro" className="Link_Paginas">Registro</a>
         </nav>
     </header>
     )
