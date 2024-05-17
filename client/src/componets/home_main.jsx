@@ -6,7 +6,6 @@ import "../App.css"
 
 
 
-import Busqueda from "../assets/images/busqueda.svg"
 
 import "../styles/home_styles.css"
 
@@ -18,6 +17,7 @@ import Complemento from '../componets/Comp_Complemento'
 import Descarga from "../componets/Comp_Descargar"
 import Novedades from "../componets/Comp_Noti_Nov"
 import Footer from "../componets/Footer_Main"
+import BuscarcentroCEC from "../componets/BuscarCentroCEC"
 
 function BannerHome(){
     const[data, setData] = React.useState(null);
@@ -41,7 +41,7 @@ function BannerHome(){
 
                 </a>    
                 <div className="Banner_content">
-                    <h1>¿Listo Para Entrenar? {!data ? "Loading..." : data}</h1>
+                    <h1>¿Listo Para Entrenar?</h1>
                     <p>
                         Recuerda, entrenar por el cuerpo que deseas
                     </p>
@@ -57,19 +57,7 @@ function BannerHome(){
 
           
             
-                <div className="image_Find_Center">
-                    <Link to="/Nuestros Gimnasios"className="content_Find_Center">
-                        <button className="Banner_boton_gimnasio">
-                            <p>Encuentra un centro</p>
-                            <span>
-                                <img src={Busqueda} alt="Lupa" className="iconos"/> 
-                            </span>
-                        </button>
-                    </Link>
-                </div>
-            
-
-            <Planes/>
+            <BuscarcentroCEC/>
             <Instalaciones/>
             <SectionProgramas/>
             <Descarga/>
