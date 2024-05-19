@@ -1,61 +1,3 @@
-/*Header*/
-
-.conteiner_header{
-    background-color: #000000;
-    width: 100%;
-    display: flex;
-    box-shadow: 0px 5px 20px #000000;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-}
-
-.contenedor_Logo{
-    width: 63%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.contenedor_Logo a{
-    display: flex;
-    align-items: center;
-}
-
-.logo_header{
-    margin: 0 0 0 4rem;
-    width: 10rem;
-}
-
-.contenedor_Link_Paginas{
-    display: flex;
-    margin: 0 2rem 0 0;
-}
-
-.Link_Paginas{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    padding: 0 20px;
-}
-
-.Link_Paginas:hover{
-    color: #8e8e8e;
-}
-
-.contenedor_imagen_App{
-    width: 100%;
-    display: flex;
-    justify-content: end;
-}
-
-.imagen_mockup_App{
-    width: 550px;
-    margin-right: 3rem;
-}
-
-
-/*Baanner main*/
 .main{
     min-height: 100%;
 }
@@ -98,15 +40,15 @@
 }
 
 .Banner_boton_llamado{
-    padding: 0.6rem 4rem;
+    padding: 0.4rem 3rem;
     cursor: pointer;
     border: none;
-    border-radius: 20px;
+    border-radius: 7px;
     margin-top: 2rem;
     background-color: rgb(255, 157, 0);
     font-weight: 600;
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .Banner_boton_llamado:hover{
@@ -115,59 +57,6 @@
 
 
 
-
-/**Componente busqueda*/
-
-.content_Find_Center{
-    text-decoration: none;
-}
-
-.image_Find_Center{
-    width: 95%;
-    flex-wrap: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../assets/images/findCenter.jpg);
-    background-position: 50%;
-    border-radius: 12px;
-    height: 400px;
-    margin-top: 2rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-}
-
-.Banner_boton_gimnasio{
-    padding: 0.4rem 4rem;
-    border: 1px solid #000000;
-    border-radius: 13px;
-    background-color: rgb(255, 255, 255);
-    font-weight: 600;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.Banner_boton_gimnasio p{
-    margin: 0;
-}
-
-.Banner_boton_gimnasio:hover {
-    background-color: rgb(40, 40, 40);
-    color: white;
-}
-
-.iconos{
-    width: 24px;
-    margin: 3px 0 0 35px;
-    stroke: #ffffff;
-    fill: #ffffff;
-
-}
 
 
 
@@ -585,7 +474,7 @@ footer {
   }
 
   .container_redesSociales{
-    width: 100px;
+    width: 500px;
     display: flex;
     justify-content: space-around;
   }
@@ -613,3 +502,16 @@ footer {
     color: white;
     font-size: 16px;
   }
+
+  /* Estilos para responsive */
+  .contenedor_imagen_App{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.imagen_mockup_App{
+    width: 550px;
+    margin-right: 3rem;
+}
+

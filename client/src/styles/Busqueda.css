@@ -1,0 +1,57 @@
+.content_Find_Center{
+    text-decoration: none;
+}
+
+.image_Find_Center{
+    width: 80%;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/images/findCenter.jpg);
+    background-position: 50%;
+    border-radius: 7px;
+    height: 400px;
+    margin-top: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Banner_boton_gimnasio{
+    padding: 0.4rem 4rem;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Banner_boton_gimnasio p{
+    margin: 0;
+}
+
+.Banner_boton_gimnasio:hover {
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+.iconos{
+    width: 24px;
+    margin: 3px 0 0 35px;
+    stroke: #ffffff;
+    fill: #ffffff;
+}
+
+
+
+/*______________________________________________Responsive______________________________________________*/
+@media (max-width: 768px) {
+    .Banner_boton_gimnasio{
+        padding: 0.2rem 2rem;
+        font-size: 16px;
+    }  
+}

@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Banner from './componets/home_main';
 import Rutinas from './views/Rutinas';
