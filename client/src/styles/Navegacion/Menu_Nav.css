@@ -66,26 +66,26 @@
 .Link_Login{
     padding: 0.2rem 1.5rem 0.3rem;
     color:#000000;
-    background-color: #ff7801;
+    background-color: #f2ff01;
     border-radius: 5px;
     font-weight: 600;
 }
 
 .Link_Login:hover{
     color: #000000;
-    background-color: #ffa600;
+    background-color: #ffd900;
 }
 
 .Link_Register{
     padding: 0.2rem 0.8rem 0.3rem 0.8rem;
-    color: #ff7801;
+    color: #f2ff01;
     border-radius: 5px;
-    border: 1px solid #ff7801;
+    border: 1px solid #f2ff01;
 }
 
 .Link_Register:hover{
-    color:#ffa600;
-    border: 1px solid #ffa600;
+    color:#ffd900;
+    border: 1px solid #ffd900;
 }
 
 

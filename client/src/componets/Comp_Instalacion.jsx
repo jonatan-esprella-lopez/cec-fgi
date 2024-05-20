@@ -9,9 +9,9 @@ function Instalaciones(){
     
     return( 
         <section className="Instalaciones_container">
-                <h2>
+                <h4>
                     Experimenta la calidad de entrenamiento en <span>CEC - FGI</span>, junto a profesionales en el área.
-                </h2>
+                </h4>
 
                 <div className="Instalacion_Containers">
                     <div className="instalacion_container">

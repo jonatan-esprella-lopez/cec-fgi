@@ -8,14 +8,24 @@ function BusquedaCEC(){
     
     return( 
         <div className="image_Find_Center">
-            <Link to="/Nuestros Gimnasios"className="content_Find_Center">
-                <button className="Banner_boton_gimnasio">
-                    <p>Encuentra un centro</p>
-                    <span>
-                        <img src={Busqueda} alt="Lupa" className="iconos"/> 
-                    </span>
-                </button>
-            </Link>
+
+                <div className="Banner_boton_gimnasio">
+                    <div>
+                        <div className="contenedor-titulo-FC">    
+                            <p>Encuentra un centro</p>
+                        </div>
+                        <span className="contenedor-Busqueda">
+                            <img src={Busqueda} alt="Lupa" className="iconos"/> 
+                            <input type="search" name="search" placeholder="Escribe tu ciudad o provincia" className="busqueda-input"/>
+                            <Link to="/Nuestros Gimnasios">
+                                <button className="Boton-buscar-centro">
+                                    Buscar
+                                </button>
+                            </Link>
+                        </span>
+                    </div>
+                </div>
+                
         </div>
     )
 }

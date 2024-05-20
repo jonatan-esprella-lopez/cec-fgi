@@ -52,8 +52,7 @@ function BannerHome(){
                     </Link>
                 </div>
             </section>
-            
-            <h2>Encuentra un Centro<span> CEC - FGI</span> Cerca</h2>
+            <h4>Encuentra un Centro<span> CEC - FGI</span> Cerca</h4>
 
           
             
