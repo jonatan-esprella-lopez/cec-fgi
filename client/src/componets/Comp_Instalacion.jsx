@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css"
-import "../styles/home_styles.css"
+import "../styles/Instalaciones/Areas.css"
 
 import FindCenter from "../assets/images/findCenter.jpg"
 

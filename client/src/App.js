@@ -1,5 +1,8 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Switch} from 'react-router-dom';
+import { AuthProvider } from './contexts/AuthContext';
+import ProtectedRoute from './componets/ProtectedRoute';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Banner from './componets/home_main';
 import Rutinas from './views/Rutinas';
 import Nutricion from "./views/Nutricion";
@@ -17,22 +20,25 @@ import PerfilPublico from  "./views/Perfil/PerfilPublico"
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Banner />} />
-        <Route path="/Nuestras rutinas" element={<Rutinas />} />
-        <Route path="/Nutricion" element={<Nutricion />} />
-        <Route path="/Nuestros Gimnasios" element={<Gimnasio />} />
-        <Route path="/Planes de inscripcion" element={<Inscripcion />} />
-        <Route path="/Inscripcion" element={<Planes />} />
-        <Route path="/Evaluaciones" element={<Evaluaciones />} />
-        <Route path="/Nosotros" element={<Nosotros />} />
-        <Route path="/Nosotros1" element={<Nosotro1 />} />
-        <Route path="/Plan Nutricional" element={<Plan />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Registro" element={<Registro />} />
-        <Route path="/PerfilUser"element={<PerfilPublico />}/>
-
-      </Routes>
+      <AuthProvider>
+        <Switch>
+          <Route path="/" element={<Banner />} />
+          <Route path="/Nuestras rutinas" element={<Rutinas />} />
+          <Route path="/Nutricion" element={<Nutricion />} />
+          <Route path="/Nuestros Gimnasios" element={<Gimnasio />} />
+          <Route path="/Planes de inscripcion" element={<Inscripcion />} />
+          <Route path="/Inscripcion" element={<Planes />} />
+          <Route path="/Evaluaciones" element={<Evaluaciones />} />
+          <Route path="/Nosotros" element={<Nosotros />} />
+          <Route path="/Nosotros1" element={<Nosotro1 />} />
+          <Route path="/Plan Nutricional" element={<Plan />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Registro" element={<Registro />} />
+          <Route path="/PerfilUser"element={<PerfilPublico />}/>
+          
+          <ProtectedRoute path="/dashboard" component={Dashboard} />
+        </Switch>
+      </AuthProvider>
     </Router>
   );
 }
