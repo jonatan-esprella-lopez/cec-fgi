@@ -1,33 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import "../App.css"
-import Logo from "../assets/images/CEC/Logo.svg"
-
-import "../styles/home_styles.css"
+import Logo from "../assets/images/Logotipo-cec/Entrenamiento-Funcional.png"
+import Credenciales from "../componets/ElementosLogin/BotonInicioSesion"
+import "../styles/Navegacion/Menu_Nav.css"
 
 function HeaderMain(){
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    
+    const links = [
+        { path: "/", label: "Inicio" },
+        { path: "/Nuestras rutinas", label: "Rutinas" },
+        { path: "/Nutricion", label: "Nutricion" },
+        { path: "/Nuestros Gimnasios", label: "Gimnasios" },
+        { path: "/Evaluaciones", label: "Evaluaciones" },
+        { path: "/Nosotros", label: "Nosotros" },
+        { path: "/Soporte", label: "Soporte" }
+      ];
+
+    const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
     return( 
     <header className="conteiner_header">
+        <div className="Contenedor_credenciales"><Credenciales/></div>
         <div className="contenedor_Logo">
             <a href="/">
                 <img src={Logo} alt="" className="logo_header"/>
             </a>
         </div>
-        <nav className="contenedor_Link_Paginas">
-                    
-            <Link to="/"><p className="Link_Paginas">Home</p></Link>
-            <Link to="/Nuestras rutinas"><p className="Link_Paginas">Ruttinas</p></Link>
-            <Link to="/Nutricion"><p className="Link_Paginas">Nutricion</p></Link>
-            <Link to="/Nuestros Gimnasios"><p className="Link_Paginas">Gimnasios</p></Link>
-            <Link to="/Evaluaciones"><p className="Link_Paginas">Evaluaciones</p></Link>
-            <Link to="/Nosotros"><p className="Link_Paginas">Nosotros</p></Link>
-            <Link to="/Soporte"><p className="Link_Paginas">Soporte</p></Link>
-
-            <Link to="/login"><p className="Link_Paginas">Login</p></Link>
-            <Link to="/registro"><p className="Link_Paginas">Registro</p></Link>
-        </nav>
+        <div className="contenedorNav">
+        <button className="menu_toggle" onClick={toggleMenu}>
+            &#9776;
+        </button>
+            <nav className={`contenedor_Link_Paginas ${isMenuOpen ? 'open' : ''}`}>
+                        
+            {links.map(link => (
+                <p >
+                <Link key={link.path} to={link.path} className={`Link_Paginas ${link.specialClass || ''}`}>
+                    {link.label} 
+                </Link>
+            </p>
+            ))}
+            </nav>
+        </div>
+        
     </header>
     )
 }

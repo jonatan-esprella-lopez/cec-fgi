@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css"
-import "../styles/home_styles.css"
+import "../styles/Instalaciones/Areas.css"
 
 import FindCenter from "../assets/images/findCenter.jpg"
 
@@ -9,9 +9,9 @@ function Instalaciones(){
     
     return( 
         <section className="Instalaciones_container">
-                <h2>
-                    Experimenta la calidad de entrenamiento en <span>CEC - FGI</span>, junto a profesionales en el area.
-                </h2>
+                <h4>
+                    Experimenta la calidad de entrenamiento en <span>CEC - FGI</span>, junto a profesionales en el área.
+                </h4>
 
                 <div className="Instalacion_Containers">
                     <div className="instalacion_container">

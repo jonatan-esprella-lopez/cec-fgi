@@ -1,9 +1,8 @@
 import React from "react";
-import "../App.css"
-import "../styles/home_styles.css"
-import RitmosFitness from "../assets/images/Clases/Ritmos.jpg"
+import "../styles/Clases/Programas.css"
+import Entrenamiento from "../assets/images/Clases/Entrenamiento.jpg"
 import FullKombat from "../assets/images/Clases/FullKombat.jpg"
-import Rebound from "../assets/images/Clases/Rebound.jpg"
+import Fexibilidad from "../assets/images/Clases/Fexibilidad.jpg"
 import Duracion from "../assets/images/duracion-clases.svg";
 import Intensidad from "../assets/images/intensidad.svg"
 
@@ -12,15 +11,15 @@ function ProgramaMain(){
     
     return( 
     <section className="Programas_container">
-        <h2>
-            Conoce Todo sobre <span>CEC - FGI</span>
-        </h2>
+        <h4>
+            Conoce los tipos de entrenamiento en <span>CEC - FGI</span>
+        </h4>
 
         <div className="Instalacion_Containers">
             <div className="instalacion_container">
-                <img src={RitmosFitness} alt="" className="imagen_Instalacion"/>
+                <img src={Entrenamiento} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
-                    <a>Ritmos Fitness</a>
+                    <a>Entrenamiento Funcional</a>
                 </div>
                 <div className="contenido_clases_detalle">
                     <div className="detalle_clase">
@@ -46,7 +45,7 @@ function ProgramaMain(){
             <div className="instalacion_container">
                 <img src={FullKombat} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
-                    <a>Full Kombat</a>
+                    <a>Aeróbicos</a>
                 </div><div className="contenido_clases_detalle">
                     <div className="detalle_clase">
                         <img src={Duracion} alt="" className="Iconos_detalle"/>
@@ -69,9 +68,9 @@ function ProgramaMain(){
                 </div>
             </div>
             <div className="instalacion_container">
-                <img src={Rebound} alt="" className="imagen_Instalacion"/>
+                <img src={Fexibilidad} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
-                    <a>Rebound Xtreme</a>
+                    <a>Flexibilidad</a>
                 </div>
                 <div className="contenido_clases_detalle">
                     <div className="detalle_clase">
