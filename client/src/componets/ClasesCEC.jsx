@@ -1,6 +1,5 @@
 import React from "react";
-import "../App.css"
-import "../styles/home_styles.css"
+import "../styles/Clases/Programas.css"
 import Entrenamiento from "../assets/images/Clases/Entrenamiento.jpg"
 import FullKombat from "../assets/images/Clases/FullKombat.jpg"
 import Fexibilidad from "../assets/images/Clases/Fexibilidad.jpg"
@@ -12,9 +11,9 @@ function ProgramaMain(){
     
     return( 
     <section className="Programas_container">
-        <h2>
+        <h4>
             Conoce los tipos de entrenamiento en <span>CEC - FGI</span>
-        </h2>
+        </h4>
 
         <div className="Instalacion_Containers">
             <div className="instalacion_container">
