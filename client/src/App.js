@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Switch} from 'react-router-dom';
-import { AuthProvider } from './contexts/AuthContext';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProtectedRoute from './componets/ProtectedRoute';
 
 import Banner from './componets/home_main';
@@ -20,8 +19,7 @@ import PerfilPublico from  "./views/Perfil/PerfilPublico"
 function App() {
   return (
     <Router>
-      <AuthProvider>
-        <Switch>
+        <Routes>
           <Route path="/" element={<Banner />} />
           <Route path="/Nuestras rutinas" element={<Rutinas />} />
           <Route path="/Nutricion" element={<Nutricion />} />
@@ -35,10 +33,7 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Registro" element={<Registro />} />
           <Route path="/PerfilUser"element={<PerfilPublico />}/>
-          
-          <ProtectedRoute path="/dashboard" component={Dashboard} />
-        </Switch>
-      </AuthProvider>
+        </Routes>
     </Router>
   );
 }

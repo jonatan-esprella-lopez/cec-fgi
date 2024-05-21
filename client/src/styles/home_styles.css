@@ -206,6 +206,14 @@
 @media (max-width: 768px) {
     .contenedor_App_Mobil {
         padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contenedor_imagen_App{
+        width: 40%;
+        justify-content:center;
+        
     }
 
     .contenedor_titulo_App {

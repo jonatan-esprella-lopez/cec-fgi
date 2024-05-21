@@ -81,16 +81,6 @@
 /*______________________________________________Responsive______________________________________________*/
 
 
-@media (max-width: 1024px) {
-    .Programas_container {
-        width: 80%;
-    }
-
-    .detalle_clase {
-        width: calc(50% - 2rem);
-    }
-}
-
 @media (max-width: 768px) {
     .Programas_container {
         width: 100%;
