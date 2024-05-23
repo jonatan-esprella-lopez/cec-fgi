@@ -1,11 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, ReactNode} from "react";
 import { Link } from 'react-router-dom';
 import "../App.css"
 import Logo from "../assets/images/Logotipo-cec/Entrenamiento-Funcional.png"
 import Credenciales from "../componets/ElementosLogin/BotonInicioSesion"
 import "../styles/Navegacion/Menu_Nav.css"
 
-function HeaderMain(){
+interface DefaultChildren{
+    children: ReactNode;
+  }
+
+
+function HeaderMain({children}: DefaultChildren){
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const links = [
@@ -44,7 +49,9 @@ function HeaderMain(){
             ))}
             </nav>
         </div>
-        
+        <main>
+            {children}
+        </main>
     </header>
     )
 }

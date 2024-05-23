@@ -1,6 +1,6 @@
-// Register.js
-
+import { useAuth } from "../../auth/AuthProvider.tsx";
 import React, { useState } from "react";
+import { Navigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../../styles/Register.css";
 
@@ -19,6 +19,7 @@ function Register() {
     phone: "",
   });
 
+  const { isAuthenticated } = useAuth();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -29,7 +30,9 @@ function Register() {
     // Aquí puedes implementar la lógica para enviar los datos del formulario al servidor
     console.log(formData);
   };
-
+  if (isAuthenticated){
+    return <Navigate to="/PerfilUser"/>;
+  }
   return (
     <div>
         <Header/>

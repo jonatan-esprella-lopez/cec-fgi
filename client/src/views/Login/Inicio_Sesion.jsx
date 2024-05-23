@@ -1,14 +1,17 @@
 import React, { useState } from "react";
-import "../../styles/Login.css"; // Importa tus estilos de CSS
-
-
+import { useAuth } from "../../auth/AuthProvider.tsx";
+import "../../styles/Login.css"
 import Header from "../../componets/Header_Main"
 import Footer from "../../componets/Footer_Main"
+import { Navigate } from "react-router-dom";
+
+
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const { isAuthenticated } = useAuth();
+  
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
@@ -19,14 +22,16 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes agregar la lógica para enviar los datos de inicio de sesión al servidor
     console.log("Email:", email);
     console.log("Password:", password);
+    console.log(isAuthenticated);
   };
-
+  if (isAuthenticated){
+    return <Navigate to="/PerfilUser"/>;
+  }
   return (
     <div className="login-container">
-        <Header/>
+        <Header />
       <form onSubmit={handleSubmit} className="login-form">
         <h2>Iniciar sesión</h2>
         <div className="form-group">
@@ -35,7 +40,7 @@ function Login() {
             type="email"
             id="email"
             value={email}
-            onChange={handleEmailChange} 
+            onChange={handleEmailChange}
             required
           />
         </div>
@@ -54,7 +59,7 @@ function Login() {
         </button>
       </form>
       
-      <Footer/>
+      <Footer />
     </div>
   );
 }
