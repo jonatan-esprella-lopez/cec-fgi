@@ -5,12 +5,10 @@ import Logo from "../assets/images/Logotipo-cec/Entrenamiento-Funcional.png"
 import Credenciales from "../componets/ElementosLogin/BotonInicioSesion"
 import "../styles/Navegacion/Menu_Nav.css"
 
-interface DefaultChildren{
-    children: ReactNode;
-  }
 
 
-function HeaderMain({children}: DefaultChildren){
+
+function HeaderMain(){
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const links = [
