@@ -47,9 +47,6 @@ function HeaderMain(){
             ))}
             </nav>
         </div>
-        <main>
-            {children}
-        </main>
     </header>
     )
 }

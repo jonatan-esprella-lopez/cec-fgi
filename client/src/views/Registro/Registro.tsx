@@ -3,32 +3,56 @@ import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../../styles/Register.css";
+import { API_URL } from "../../auth/constans.jsx";
 
-import Header from "../../componets/Header_Main"
-import Footer from "../../componets/Footer_Main"
+import Header from "../../componets/Header_Main.jsx"
+import Footer from "../../componets/Footer_Main.jsx"
 
 function Register() {
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-    identityCard: "",
-    birthDate: "",
-    gender: "",
-    phone: "",
-  });
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [identityCard, setIdentityCard] = useState("");
+  const [fechaNacimiento, setFechaNacimiento] = useState("");
+  const [genero, setGenero] = useState("");
+  const [celular, setCelular] = useState("");
+
+  const [errorResponse, setErrorResponse] = useState("");
+
 
   const { isAuthenticated } = useAuth();
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    // setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>){
     e.preventDefault();
-    // Aquí puedes implementar la lógica para enviar los datos del formulario al servidor
-    console.log(formData);
+
+    try {
+      setName(username);
+      const response = await fetch(`${API_URL}/registro`,{
+        method: "POST",
+        headers:  {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          name,
+          username,
+          password
+       })
+      })
+      if (response.ok) {
+        console.log("Usuario creado correctamente");
+      }else{
+        console.log("Ocurrio algun error: ");
+        const  json = await response.json;
+      }
+    } catch (error) {
+      console.log("error de no auth", error);
+    }
   };
   if (isAuthenticated){
     return <Navigate to="/PerfilUser"/>;
@@ -45,9 +69,9 @@ function Register() {
             type="text"
             id="username"
             name="username"
-            value={formData.username}
-            onChange={handleChange}
-            required
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            
           />
         </div>
         <div className="form-group">
@@ -56,9 +80,9 @@ function Register() {
             type="email"
             id="email"
             name="email"
-            value={formData.email}
+            value={email}
             onChange={handleChange}
-            required
+            
           />
         </div>
         <div className="form-group">
@@ -67,9 +91,9 @@ function Register() {
             type="password"
             id="password"
             name="password"
-            value={formData.password}
-            onChange={handleChange}
-            required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            
           />
         </div>
         <div className="form-group">
@@ -78,9 +102,9 @@ function Register() {
             type="password"
             id="confirmPassword"
             name="confirmPassword"
-            value={formData.confirmPassword}
+            value={confirmPassword}
             onChange={handleChange}
-            required
+            
           />
         </div>
         <div className="form-group">
@@ -89,9 +113,9 @@ function Register() {
             type="text"
             id="identityCard"
             name="identityCard"
-            value={formData.identityCard}
+            value={identityCard}
             onChange={handleChange}
-            required
+            
           />
         </div>
         <div className="form-group">
@@ -100,9 +124,9 @@ function Register() {
             type="date"
             id="birthDate"
             name="birthDate"
-            value={formData.birthDate}
+            value={fechaNacimiento}
             onChange={handleChange}
-            required
+            
           />
         </div>
         <div className="form-group">
@@ -110,9 +134,9 @@ function Register() {
           <select
             id="gender"
             name="gender"
-            value={formData.gender}
+            value={genero}
             onChange={handleChange}
-            required
+            
           >
             <option value="">Seleccionar</option>
             <option value="male">Masculino</option>
@@ -126,9 +150,9 @@ function Register() {
             type="text"
             id="phone"
             name="phone"
-            value={formData.phone}
+            value={celular}
             onChange={handleChange}
-            required
+            
           />
         </div>
         <button type="submit" className="btn-register">

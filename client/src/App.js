@@ -10,7 +10,7 @@ import Inscripcion from "./views/Comp_Planes_Inscrip";
 import Planes from "./views/Planes";
 import Evaluaciones from './views/Pruebas';
 import Login from './views/Login/Inicio_Sesion';
-import Registro from './views/Registro/Registro';
+import Registro from './views/Registro/Registro.tsx';
 import Nosotros from './views/Nosotros';
 import Nosotro1 from './views/Evaluaciones_Alumnos';
 import Plan from "./views/PlanNutricional";
