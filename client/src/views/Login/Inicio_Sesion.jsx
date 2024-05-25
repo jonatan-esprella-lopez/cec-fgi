@@ -33,13 +33,19 @@ function Login() {
     <div className="login-container">
         <Header />
       <form onSubmit={handleSubmit} className="login-form">
-        <h2>Iniciar sesión</h2>
+
+        <div className="contenedor-header-Login">
+          <h2>Iniciar sesión</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit harum exercitationem perspiciatis eveniet </p>
+        </div>
+        
         <div className="form-group">
           <label htmlFor="email">Correo electrónico</label>
           <input
             type="email"
             id="email"
             value={email}
+            placeholder="Ingresa tu correo electronico"
             onChange={handleEmailChange}
             required
           />
@@ -50,6 +56,7 @@ function Login() {
             type="password"
             id="password"
             value={password}
+            placeholder="Ingresa tu contraseña"
             onChange={handlePasswordChange}
             required
           />
