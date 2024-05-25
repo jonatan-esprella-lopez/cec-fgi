@@ -10,6 +10,12 @@ app.use(express.json());
 
 app.use("/api/login", require("../routes/login"));
 app.use("/api/registro", require("../routes/Registrar"));
+app.use("/api/", require("../routes/Registrar"));
+app.use("/api/registro", require("../routes/Registrar"));
+app.use("/api/registro", require("../routes/Registrar"));
+app.use("/api/registro", require("../routes/Registrar"));
+app.use("/api/registro", require("../routes/Registrar"));
+app.use("/api/registro", require("../routes/Registrar"));
 
 app.get('/', function(req, res){
   res.send('Welcome to our API');
