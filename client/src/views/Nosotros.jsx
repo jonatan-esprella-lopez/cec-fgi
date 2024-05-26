@@ -5,6 +5,7 @@ import HeaderMain from "../componets/Header_Main";
 import FooterMain from "../componets/Footer_Main";
 import InstructorCard from "../componets/Nosotros/Card_InstructorNosotros"; // Importamos el componente de la tarjeta del instructor
 import "../styles/Nosotros.css";
+import Tarjeta from "../componets/Nosotros/Tarjeta-coach";
 
 function AboutUsPage() {
   // Datos de ejemplo de los instructores
@@ -30,6 +31,7 @@ function AboutUsPage() {
       <div className="about-us-container">
         <div className="about-us-header">
           <h1>Sobre Nosotros</h1>
+          <Tarjeta/>
         </div>
         <div className="about-us-container">
   <div className="about-us-content">
