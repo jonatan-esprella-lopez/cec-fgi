@@ -6,6 +6,7 @@ import FooterMain from "../componets/Footer_Main";
 import InstructorCard from "../componets/Nosotros/Card_InstructorNosotros"; // Importamos el componente de la tarjeta del instructor
 import "../styles/Nosotros.css";
 import Tarjeta from "../componets/Nosotros/Tarjeta-coach";
+import Mision from "../componets/Nosotros/Tarjeta-Mision";
 
 function AboutUsPage() {
   // Datos de ejemplo de los instructores
@@ -34,23 +35,21 @@ function AboutUsPage() {
           <Tarjeta/>
         </div>
         <div className="about-us-container">
-  <div className="about-us-content">
-    <h2>Nuestra Misión</h2>
-    <p>
-      En el Gimnasio CEC-FGI, nuestra misión es proporcionar un entorno
-      inclusivo y motivador donde personas de todas las edades y habilidades
-      puedan alcanzar sus metas de fitness y bienestar.
-    </p>
-  </div>
 
-  <div className="about-us-content">
+        <Mision/>
+
+  
+
+  <div className="cont-Mision-Nos">
     <h2>Nuestra Visión</h2>
-    <p>
-      Queremos ser reconocidos como el gimnasio líder en nuestra comunidad,
-      ofreciendo programas de entrenamiento innovadores, servicios de alta
-      calidad y un ambiente acogedor que inspire a nuestros miembros a vivir
-      vidas más saludables y activas.
-    </p>
+    <div className="cont-Mision-text">
+      <p>
+        Queremos ser reconocidos como el gimnasio líder en nuestra comunidad,
+        ofreciendo programas de entrenamiento innovadores, servicios de alta
+        calidad y un ambiente acogedor que inspire a nuestros miembros a vivir
+        vidas más saludables y activas.
+      </p>
+    </div>
   </div>
 
   <div className="about-us-content">
