@@ -7,6 +7,8 @@ import InstructorCard from "../componets/Nosotros/Card_InstructorNosotros"; // I
 import "../styles/Nosotros.css";
 import Tarjeta from "../componets/Nosotros/Tarjeta-coach";
 import Mision from "../componets/Nosotros/Tarjeta-Mision";
+import Vision from "../componets/Nosotros/Tarjeta-Vision";
+import ValoresCEC from "../componets/Nosotros/Tarjeta-Valores";
 
 function AboutUsPage() {
   // Datos de ejemplo de los instructores
@@ -32,39 +34,22 @@ function AboutUsPage() {
       <div className="about-us-container">
         <div className="about-us-header">
           <h1>Sobre Nosotros</h1>
-          <Tarjeta/>
+          
         </div>
         <div className="about-us-container">
 
         <Mision/>
+        <Vision/>
+        <ValoresCEC/>
+  
+
+
 
   
 
-  <div className="cont-Mision-Nos">
-    <h2>Nuestra Visión</h2>
-    <div className="cont-Mision-text">
-      <p>
-        Queremos ser reconocidos como el gimnasio líder en nuestra comunidad,
-        ofreciendo programas de entrenamiento innovadores, servicios de alta
-        calidad y un ambiente acogedor que inspire a nuestros miembros a vivir
-        vidas más saludables y activas.
-      </p>
-    </div>
-  </div>
-
-  <div className="about-us-content">
-    <h2>Nuestros Valores</h2>
-    <ul>
-      <li>Compromiso con la excelencia</li>
-      <li>Integridad y ética profesional</li>
-      <li>Respeto y empatía hacia nuestros miembros</li>
-      <li>Innovación y mejora continua</li>
-      <li>Trabajo en equipo y colaboración</li>
-    </ul>
-  </div>
-
   <div className="about-us-content">
     <h2>Nuestros Instructores</h2>
+    <Tarjeta/>
     <div className="instructor-cards-container">
       {instructors.map((instructor) => (
         <InstructorCard
