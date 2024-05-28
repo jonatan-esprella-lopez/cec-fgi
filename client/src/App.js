@@ -9,7 +9,7 @@ import Gimnasio from "./views/Gimnasios"
 import Inscripcion from "./views/Comp_Planes_Inscrip";
 import Planes from "./views/Planes";
 import Evaluaciones from './views/Pruebas';
-import Login from './views/Login/Inicio_Sesion';
+import Login from './views/Login/Inicio_Sesion.tsx';
 import Registro from './views/Registro/Registro.tsx';
 import Nosotros from './views/Nosotros';
 import Nosotro1 from './views/Evaluaciones_Alumnos';

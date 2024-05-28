@@ -1,14 +1,15 @@
 import { useAuth } from "../../auth/AuthProvider.tsx";
 import React, { useState } from "react";
-import { Navigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Navigate, Link, useNavigate} from "react-router-dom";
 import "../../styles/Register.css";
-import { API_URL } from "../../auth/constans.jsx";
-
+import { API_URL } from "../../auth/constans";
 import Header from "../../componets/Header_Main.jsx"
 import Footer from "../../componets/Footer_Main.jsx"
+import { AuthResponseError } from "../../types/Types.tsx";
 
-function Register() {
+
+
+export default function Register() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
@@ -18,40 +19,41 @@ function Register() {
   const [fechaNacimiento, setFechaNacimiento] = useState("");
   const [genero, setGenero] = useState("");
   const [celular, setCelular] = useState("");
-
   const [errorResponse, setErrorResponse] = useState("");
-
-
   const { isAuthenticated } = useAuth();
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    // setFormData({ ...formData, [name]: value });
-  };
+
+  const goTo = useNavigate();
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>){
     e.preventDefault();
 
     try {
       setName(username);
-      const response = await fetch(`${API_URL}/registro`,{
+      
+      const response = await fetch(`${API_URL}/registro`, {
         method: "POST",
         headers:  {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           name,
           username,
-          password
-       })
-      })
+          password,
+       }),
+      });
       if (response.ok) {
         console.log("Usuario creado correctamente");
-      }else{
+        setErrorResponse("");
+        goTo("/Login");
+      } else {
         console.log("Ocurrio algun error: ");
-        const  json = await response.json;
+        const json = (await response.json()) as AuthResponseError;
+        setErrorResponse(json.body.error);
+        return;
       }
     } catch (error) {
-      console.log("error de no auth", error);
+      console.log(error);
+      
     }
   };
   if (isAuthenticated){
@@ -63,6 +65,7 @@ function Register() {
     <div className="register-container">
       <form className="register-form" onSubmit={handleSubmit}>
         <h2>Registro</h2>
+        {!! errorResponse && <div className="errorMessage">{errorResponse}</div>}
         <div className="form-group">
           <label htmlFor="username">Nombre de usuario</label>
           <input
@@ -71,7 +74,6 @@ function Register() {
             name="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            
           />
         </div>
         <div className="form-group">
@@ -81,7 +83,7 @@ function Register() {
             id="email"
             name="email"
             value={email}
-            onChange={handleChange}
+            onChange={(e) => setCelular(e.target.value)}
             
           />
         </div>
@@ -103,7 +105,7 @@ function Register() {
             id="confirmPassword"
             name="confirmPassword"
             value={confirmPassword}
-            onChange={handleChange}
+            onChange={(e) => setCelular(e.target.value)}
             
           />
         </div>
@@ -114,7 +116,7 @@ function Register() {
             id="identityCard"
             name="identityCard"
             value={identityCard}
-            onChange={handleChange}
+            onChange={(e) => setCelular(e.target.value)}
             
           />
         </div>
@@ -125,7 +127,7 @@ function Register() {
             id="birthDate"
             name="birthDate"
             value={fechaNacimiento}
-            onChange={handleChange}
+            onChange={(e) => setCelular(e.target.value)}
             
           />
         </div>
@@ -135,7 +137,7 @@ function Register() {
             id="gender"
             name="gender"
             value={genero}
-            onChange={handleChange}
+            onChange={(e) => setCelular(e.target.value)}
             
           >
             <option value="">Seleccionar</option>
@@ -151,7 +153,7 @@ function Register() {
             id="phone"
             name="phone"
             value={celular}
-            onChange={handleChange}
+            onChange={(e) => setCelular(e.target.value)}
             
           />
         </div>
@@ -167,5 +169,3 @@ function Register() {
     </div>
   );
 }
-
-export default Register;
