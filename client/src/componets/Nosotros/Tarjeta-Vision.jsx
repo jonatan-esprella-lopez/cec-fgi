@@ -1,10 +1,14 @@
 import React from "react";
 import "../../styles/Nosotros/Tarjeta-mision.css";
+import Visione from "../../assets/images/Nosotros/Vision.jpg"
 
 
 function Vision(params) {
     return(
         <section className="cont-Mision-Nos">
+            <div className="cont-Img-Mis">   
+                <img src={Visione} alt="" />        
+            </div>
             <h2>Nuestra Visión</h2>
             <div className="cont-Mision-text">
                 <p>

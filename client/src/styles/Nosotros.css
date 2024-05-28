@@ -1,6 +1,7 @@
 /* aboutUs_styles.css */
 
 .about-us-container {
+  background-color: #e6e6e6;
     padding: 20px;
   }
   
@@ -94,3 +95,7 @@
     color: #777; /* Cambiamos el color del texto */
   }
   
+
+  .cont-Mis-Vis{
+    display: flex;
+  }

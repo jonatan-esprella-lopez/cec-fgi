@@ -26,6 +26,10 @@ function Instalaciones(){
                         <img src={FindCenter} alt="" className="imagen_Instalacion"/>
                         <p className="Text_instalaciones">Instalación de Aerobicos</p>
                     </div>
+                    <div className="instalacion_container">
+                        <img src={FindCenter} alt="" className="imagen_Instalacion"/>
+                        <p className="Text_instalaciones">Instalación de Aerobicos</p>
+                    </div>
                 </div>
                 <button className="Banner_boton_llamado">
                     ¡Comienza Ahora!

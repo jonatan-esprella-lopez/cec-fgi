@@ -8,7 +8,7 @@ function BusquedaCEC(){
     
     return( 
         <div className="image_Find_Center">
-
+            <h4>Encuentra un Centro<span> CEC - FGI</span> Cerca</h4>
                 <div className="Banner_boton_gimnasio">
                     <div>
                         <div className="contenedor-titulo-FC">    
