@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, ReactNode} from "react";
 import { Link } from 'react-router-dom';
 import "../App.css"
 import Logo from "../assets/images/Logotipo-cec/Entrenamiento-Funcional.png"
 import Credenciales from "../componets/ElementosLogin/BotonInicioSesion"
 import "../styles/Navegacion/Menu_Nav.css"
+
+
+
 
 function HeaderMain(){
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +47,6 @@ function HeaderMain(){
             ))}
             </nav>
         </div>
-        
     </header>
     )
 }
