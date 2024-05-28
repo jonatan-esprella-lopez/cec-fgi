@@ -33,13 +33,19 @@ function AboutUsPage() {
       <HeaderMain />
       <div className="about-us-container">
         <div className="about-us-header">
-          <h1>Sobre Nosotros</h1>
+          <h1>Bienvenido a CEC-FGI</h1>
+          <p>
+            Nuestra historia comenzó en 2020 con una misión clara: proporcionar un espacio donde las personas pudieran transformar 
+            sus vidas a través del fitness. Desde nuestros humildes comienzos, hemos crecido para convertirnos en un referente en la 
+            comunidad de Cochabamba, gracias a nuestro compromiso con la salud y el bienestar.
+          </p>
           
         </div>
         <div className="about-us-container">
-
-        <Mision/>
-        <Vision/>
+        <div className="cont-Mis-Vis">
+          <Mision/>
+          <Vision/>
+        </div>
         <ValoresCEC/>
   
 
