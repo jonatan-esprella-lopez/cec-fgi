@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProtectedRoute from './componets/ProtectedRoute';
 
-import Banner from './componets/home_main';
+import Banner from './views/Home';
 import Rutinas from './views/Rutinas';
 import Nutricion from "./views/Nutricion";
 import Gimnasio from "./views/Gimnasios"
