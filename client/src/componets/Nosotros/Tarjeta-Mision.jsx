@@ -5,7 +5,7 @@ import Misione from "../../assets/images/Nosotros/Mision.jpg";
 
 function Mision(params) {
     return(
-        <section className="cont-Mision-Nos">
+        <section className="Diseno-tarjetas-1 cont-Mision-Nos">
             <div className="cont-Img-Mis">   
                 <img src={Misione} alt="" />        
             </div>

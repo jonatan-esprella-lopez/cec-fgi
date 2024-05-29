@@ -16,7 +16,7 @@ function ProgramaMain(){
         </h4>
 
         <div className="Instalacion_Containers">
-            <div className="instalacion_container">
+            <div className="Diseno-tarjetas-1">
                 <img src={Entrenamiento} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
                     <a>Entrenamiento Funcional</a>
@@ -42,7 +42,7 @@ function ProgramaMain(){
                     </p>
                 </div>
             </div>
-            <div className="instalacion_container">
+            <div className="Diseno-tarjetas-1">
                 <img src={FullKombat} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
                     <a>Aeróbicos</a>
@@ -67,7 +67,7 @@ function ProgramaMain(){
                     </p>
                 </div>
             </div>
-            <div className="instalacion_container">
+            <div className="Diseno-tarjetas-1">
                 <img src={Fexibilidad} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
                     <a>Flexibilidad</a>

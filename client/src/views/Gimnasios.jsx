@@ -87,7 +87,7 @@ function GimnasioPage() {
                 </div>
                 <div className='contenedor_2_gimnasios'>
                     <div className="Instalacion_Containers">
-                        <div className="instalacion_container">
+                        <div className="Diseno-tarjetas-1">
                             <img src={RitmosFitness} alt="" className="imagen_Instalacion" />
                             <div className="Clases_titulo_Container">
                                 <a>CEC-FGI GOLD</a>
@@ -113,7 +113,7 @@ function GimnasioPage() {
                                 </p>
                             </div>
                         </div>
-                        <div className="instalacion_container">
+                         <div className="Diseno-tarjetas-1">
                             <img src={FullKombat} alt="" className="imagen_Instalacion" />
                             <div className="Clases_titulo_Container">
                                 <a>Platinum CEC</a>
@@ -139,7 +139,7 @@ function GimnasioPage() {
                                 </p>
                             </div>
                         </div>
-                        <div className="instalacion_container">
+                        <div className="Diseno-tarjetas-1">
                             <img src={Rebound} alt="" className="imagen_Instalacion" />
                             <div className="Clases_titulo_Container">
                                 <a>Rebound Xtreme</a>

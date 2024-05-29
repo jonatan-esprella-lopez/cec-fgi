@@ -5,7 +5,7 @@ import Visione from "../../assets/images/Nosotros/Vision.jpg"
 
 function Vision(params) {
     return(
-        <section className="cont-Mision-Nos">
+        <section className="Diseno-tarjetas-1 cont-Mision-Nos">
             <div className="cont-Img-Mis">   
                 <img src={Visione} alt="" />        
             </div>

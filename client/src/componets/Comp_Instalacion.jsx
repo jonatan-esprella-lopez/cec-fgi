@@ -14,19 +14,19 @@ function Instalaciones(){
                 </h4>
 
                 <div className="Instalacion_Containers">
-                    <div className="instalacion_container">
+                    <div className="Diseno-tarjetas-1 Cont-areas-Tarjeta">
                         <img src={FindCenter} alt="" className="imagen_Instalacion"/>
                         <p className="Text_instalaciones">Instalacion de Entrenamiento Funcional</p>
                     </div>
-                    <div className="instalacion_container">
+                    <div className="Diseno-tarjetas-1 Cont-areas-Tarjeta">
                         <img src={FindCenter} alt="" className="imagen_Instalacion"/>
                         <p className="Text_instalaciones">Instalacion de Hidratacion y evaluación</p>
                     </div>
-                    <div className="instalacion_container">
+                    <div className="Diseno-tarjetas-1 Cont-areas-Tarjeta">
                         <img src={FindCenter} alt="" className="imagen_Instalacion"/>
                         <p className="Text_instalaciones">Instalación de Aerobicos</p>
                     </div>
-                    <div className="instalacion_container">
+                    <div className="Diseno-tarjetas-1 Cont-areas-Tarjeta">
                         <img src={FindCenter} alt="" className="imagen_Instalacion"/>
                         <p className="Text_instalaciones">Instalación de Aerobicos</p>
                     </div>
