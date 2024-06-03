@@ -9,31 +9,39 @@ function Instalaciones(){
     
     return( 
         <section className="Instalaciones_container">
-                <h4>
-                    Experimenta la calidad de entrenamiento en <span>CEC - FGI</span>, junto a profesionales en el área.
-                </h4>
+            <div className="container-head-section">
+                <div>            
+                    <h4>
+                        Experimenta la calidad de entrenamiento en <span>CEC - FGI</span>, junto a profesionales en el área.
+                        <div className="underline"></div>
+                    </h4>
+                    
+                </div>
 
-                <div className="Instalacion_Containers">
-                    <div className="Diseno-tarjetas-1 Cont-areas-Tarjeta">
+                <a href="">
+                    Encuentra mas ambientes...
+                </a>
+            </div>
+                
+
+                <div className="container-cards">
+                    <article className="estructure-card-1 Cont-areas-Tarjeta">
                         <img src={FindCenter} alt="" className="imagen_Instalacion"/>
                         <p className="Text_instalaciones">Instalacion de Entrenamiento Funcional</p>
-                    </div>
-                    <div className="Diseno-tarjetas-1 Cont-areas-Tarjeta">
+                    </article>
+                    <article className="estructure-card-1 Cont-areas-Tarjeta">
                         <img src={FindCenter} alt="" className="imagen_Instalacion"/>
                         <p className="Text_instalaciones">Instalacion de Hidratacion y evaluación</p>
-                    </div>
-                    <div className="Diseno-tarjetas-1 Cont-areas-Tarjeta">
+                    </article>
+                    <article className="estructure-card-1 Cont-areas-Tarjeta">
                         <img src={FindCenter} alt="" className="imagen_Instalacion"/>
                         <p className="Text_instalaciones">Instalación de Aerobicos</p>
-                    </div>
-                    <div className="Diseno-tarjetas-1 Cont-areas-Tarjeta">
+                    </article>
+                    <article className="estructure-card-1 Cont-areas-Tarjeta">
                         <img src={FindCenter} alt="" className="imagen_Instalacion"/>
                         <p className="Text_instalaciones">Instalación de Aerobicos</p>
-                    </div>
+                    </article>
                 </div>
-                <button className="Banner_boton_llamado">
-                    ¡Comienza Ahora!
-                </button>
             </section>
     )
 }

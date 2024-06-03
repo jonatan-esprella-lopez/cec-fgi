@@ -11,12 +11,22 @@ function ProgramaMain(){
     
     return( 
     <section className="Programas_container">
-        <h4>
-            Conoce los tipos de entrenamiento en <span>CEC - FGI</span>
-        </h4>
+        <div className="container-head-section">
+            <div>            
+                <h4>
+                    Conoce los tipos de entrenamiento en <span>CEC - FGI</span>
+                    <div className="underline"></div>
+                </h4>
+                
+            </div>
 
-        <div className="Instalacion_Containers">
-            <div className="Diseno-tarjetas-1">
+            <a href="">
+                Encuentra mas ambientes...
+            </a>
+        </div>
+
+        <div className="container-cards">
+            <div className="Diseno-tarjetas-1 estructure-card-1">
                 <img src={Entrenamiento} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
                     <a>Entrenamiento Funcional</a>
@@ -42,7 +52,7 @@ function ProgramaMain(){
                     </p>
                 </div>
             </div>
-            <div className="Diseno-tarjetas-1">
+            <div className="Diseno-tarjetas-1 estructure-card-1">
                 <img src={FullKombat} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
                     <a>Aeróbicos</a>
@@ -67,7 +77,7 @@ function ProgramaMain(){
                     </p>
                 </div>
             </div>
-            <div className="Diseno-tarjetas-1">
+            <div className="Diseno-tarjetas-1 estructure-card-1">
                 <img src={Fexibilidad} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
                     <a>Flexibilidad</a>
@@ -94,9 +104,6 @@ function ProgramaMain(){
                 </div>
             </div>
         </div>
-        <button className="Banner_boton_llamado">
-            ¡Inscríbete ya!
-        </button>
     </section>
     )
 }

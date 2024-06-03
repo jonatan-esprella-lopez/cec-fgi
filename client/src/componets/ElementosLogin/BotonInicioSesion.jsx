@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
+import "../../App.css"
 function LoginRegister(){
     const links = [
-        { path: "/login", label: "Iniciar sesion", specialClass: "Link_Login" },
-        { path: "/registro", label: "Registro", specialClass: "Link_Register" }
+        { path: "/login", label: "Iniciar sesion", specialClass: "button-type-1 estructure-button-1 estructure-size" },
+        { path: "/registro", label: "Registro", specialClass: "button-type-2 estructure-button-1 estructure-size" }
       ];
 
     
@@ -12,7 +13,7 @@ function LoginRegister(){
         <> 
         {links.map(link => (
             <p >
-            <Link key={link.path} to={link.path} className={`Link_Paginas ${link.specialClass || ''}`}>
+            <Link key={link.path} to={link.path} className={`${link.specialClass || ''}`}>
                 {link.label} 
             </Link>
           </p>

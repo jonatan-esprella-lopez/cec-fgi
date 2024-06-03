@@ -1,70 +1,4 @@
-.main{
-    min-height: 100%;
-}
 
-
-.Banner_Home_Main{
-    width: 100%;
-    background-image: url("");
-    height: 513px;
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    margin-bottom: 2rem;
-    color: #ffffff;
-    
-}
-
-.Banner_video{
-    min-width: 100%;
-    min-height: 100%;
-    height: auto;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); 
-    animation: playVideo 1s linear infinite; 
-    filter:brightness(70%);
-}
-
-
-.Banner_content{
-    width: 100%;
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1; 
-}
-
-.Banner_boton_llamado{
-    padding: 0.4rem 3rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 7px;
-    margin-top: 2rem;
-    background-color: rgb(255, 157, 0);
-    font-weight: 600;
-    color: rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Banner_boton_llamado:hover{
-    background-color: rgb(255, 183, 0);
-}
-
-
-
-
-
-/*______________________________________________Responsive______________________________________________*/
-@media (max-width: 768px){
-    .Banner_Home_Main{
-        height: 27rem;
-    }
-}
 
 
 
@@ -161,6 +95,7 @@
     padding: 1rem 8rem;
     width: 100%;
     display: flex;
+    margin: 7rem 0;
    
 }
 

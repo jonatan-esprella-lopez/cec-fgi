@@ -12,9 +12,21 @@ function Complementos(){
     
     return( 
         <section className="Complementos_tarjetas">
-                <h2>Complementa tu <span>entrenamiento</span></h2>
+            <div className="container-head-section">
+                <div>            
+                    <h4>
+                        Complementa tu  <span>Entrenamiento</span>
+                        <div className="underline"></div>
+                    </h4>
+                    
+                </div>
 
-                <div className="Instalacion_Containers" >
+                <a href="">
+                    Encuentra mas ambientes...
+                </a>
+            </div>
+
+                <div className="container-cards" >
                     <div className="complementos_container">
                         <div className="icono_container_complemento">
                             <img src={App} alt="" className="Iconos_detalle"/>
