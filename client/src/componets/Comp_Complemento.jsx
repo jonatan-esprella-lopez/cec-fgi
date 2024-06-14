@@ -11,7 +11,7 @@ function Complementos(){
 
     
     return( 
-        <section className="Complementos_tarjetas">
+        <section className="estructura-principal-cards">
             <div className="container-head-section">
                 <div>            
                     <h4>

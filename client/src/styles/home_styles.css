@@ -189,13 +189,16 @@
 /*Tarjetas de Complementos ofrecidos*/
 
 .Complementos_tarjetas{
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     padding: 2rem 0;
 }
 
 
 .complementos_container{
-    width: 26%;
+    width: 22%;
     display: flex;
     align-items: center;
     flex-direction: column;

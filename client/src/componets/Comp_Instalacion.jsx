@@ -8,7 +8,7 @@ function Instalaciones(){
 
     
     return( 
-        <section className="Instalaciones_container">
+        <section className="estructura-principal-cards">
             <div className="container-head-section">
                 <div>            
                     <h4>
@@ -17,12 +17,10 @@ function Instalaciones(){
                     </h4>
                     
                 </div>
-
-                <a href="">
+                <a href="/Instalaciones">
                     Encuentra mas ambientes...
                 </a>
             </div>
-                
 
                 <div className="container-cards">
                     <article className="estructure-card-1 Cont-areas-Tarjeta">

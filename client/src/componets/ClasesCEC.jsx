@@ -10,7 +10,7 @@ function ProgramaMain(){
 
     
     return( 
-    <section className="Programas_container">
+    <section className="estructura-principal-cards">
         <div className="container-head-section">
             <div>            
                 <h4>
@@ -21,12 +21,12 @@ function ProgramaMain(){
             </div>
 
             <a href="">
-                Encuentra mas ambientes...
+                Encuentra mas Programas de entrenamiento...
             </a>
         </div>
 
-        <div className="container-cards">
-            <div className="Diseno-tarjetas-1 estructure-card-1">
+        <section className="container-cards">
+            <article className="Diseno-tarjetas-1 estructure-card-1">
                 <img src={Entrenamiento} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
                     <a>Entrenamiento Funcional</a>
@@ -51,8 +51,8 @@ function ProgramaMain(){
                         Diviértete y combina el baile con una rutina de ejercicio al ritmo de la música, mejora tu condición y coordinación
                     </p>
                 </div>
-            </div>
-            <div className="Diseno-tarjetas-1 estructure-card-1">
+            </article>
+            <article className="Diseno-tarjetas-1 estructure-card-1">
                 <img src={FullKombat} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
                     <a>Aeróbicos</a>
@@ -76,8 +76,8 @@ function ProgramaMain(){
                         Diviértete y combina el baile con una rutina de ejercicio al ritmo de la música, mejora tu condición y coordinación
                     </p>
                 </div>
-            </div>
-            <div className="Diseno-tarjetas-1 estructure-card-1">
+            </article>
+            <article className="Diseno-tarjetas-1 estructure-card-1">
                 <img src={Fexibilidad} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
                     <a>Flexibilidad</a>
@@ -102,8 +102,8 @@ function ProgramaMain(){
                         Diviértete y combina el baile con una rutina de ejercicio al ritmo de la música, mejora tu condición y coordinación
                     </p>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
     </section>
     )
 }
